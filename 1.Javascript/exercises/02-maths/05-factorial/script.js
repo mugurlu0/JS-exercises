@@ -14,14 +14,17 @@
 
     document.getElementById("run").addEventListener("click", () => {
         n = parseInt(document.getElementById("number").value);
-
-        if (n == 0) {
-            document.write(1);
+        var result = n;
+        if (n == 0 || n == 1) {
+            alert(1);
         }
         else {
-            for (i = n - 1; i >= 1; i--) {
-                n *= i;
-            } document.write(n);
+            while (n > 1) {
+                n--;
+                result = result * n;
+
+            }
         }
+        alert(result);
     });
 })();
