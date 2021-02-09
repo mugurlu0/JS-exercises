@@ -10,8 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
-    var d = new Date();
-    var x = document.getElementById("target");
-    var h = addZero(d.getHours());
-    x.innerHTML = h;
+    var hour = new Date();
+    hour = hour.getHours();
+    if (hour > 18) {
+        document.getElementById("target").innerHTML = "Bonsoir";
+    }
+    else {
+        document.getElementById("target").innerHTML = "Bonjour";
+    }
 })();
