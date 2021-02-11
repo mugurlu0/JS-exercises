@@ -10,20 +10,23 @@
 // You will have time to focus on it later.
 
 (() => {
-    const fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "kiwi",
-        "banane",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
-    ];
-
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        const fruits = [
+            "pomme",
+            "poire",
+            "fraise",
+            "tomate",
+            "kiwi",
+            "banane",
+            "orange",
+            "mandarine",
+            "durian",
+            "pêche",
+            "raisin",
+            "cerise",
+        ];
+        alert(fruits[3]);
+    });
 })();
+
+// Au clic sur le bouton, affiche le quatrième élément du tableau fruits dans le script.

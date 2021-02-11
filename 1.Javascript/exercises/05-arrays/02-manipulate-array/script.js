@@ -10,18 +10,28 @@
 // You will have time to focus on it later.
 
 (() => {
-    const fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
-    ];
-
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        const fruits = [
+            "pomme",
+            "poire",
+            "fraise",
+            "tomate",
+            "orange",
+            "mandarine",
+            "durian",
+            "pêche",
+            "raisin",
+            "cerise",
+        ];
+        fruits[0] = "banane";
+        fruits[9] = "kiwi";
+        console.log(fruits);
+    });
 })();
+
+
+
+
+/** Au clic sur le bouton, opère les transformations suivantes sur le tableau <strong>fruits</strong> :
+enlève le premier et le dernier élement, ajoute un élément "banane" au début du tableau et ajoute un élément "kiwi" à la fin du tableau.
+Pour terminer, affiche le tableau résultant dans la console. **/

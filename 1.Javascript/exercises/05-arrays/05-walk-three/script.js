@@ -38,5 +38,6 @@
         },
     ];
 
-    // your code here
+    people.forEach(element => console.log(element["firstname"]));
 })();
+//Au clic sur le bouton, affiche (dans la console) l'un après l'autre le nom de chaque personne du tableau people. Utilise la méthode forEach.

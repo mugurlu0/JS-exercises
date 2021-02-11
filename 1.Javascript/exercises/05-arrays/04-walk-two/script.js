@@ -10,20 +10,21 @@
 // You will have time to focus on it later.
 
 (() => {
-    const fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "kiwi",
-        "banane",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
-    ];
-
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        const fruits = [
+            "pomme",
+            "poire",
+            "fraise",
+            "tomate",
+            "kiwi",
+            "banane",
+            "orange",
+            "mandarine",
+            "durian",
+            "pêche",
+            "raisin",
+            "cerise",
+        ];
+        fruits.forEach(element => console.log(element));
+    });
 })();
