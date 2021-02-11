@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        const me = {
+            firstname: "Mehmet",
+            lastname: "Ugurlu",
+            age: 29,
+            city: "Brussels",
+            country: "Belgium"
+        }
+        console.log(me);
+    });
 })();
+//Au clic sur le bouton, affiche dans la console un object qui te présente et contient les propriétés suivantes
+//lastname, firstname, age, city, country
