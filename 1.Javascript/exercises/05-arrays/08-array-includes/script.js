@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", () => {
     const fruits = [
         "pomme",
         "poire",
@@ -23,7 +24,13 @@
         "pêche",
         "raisin",
         "cerise",
-    ];
-
-    // your code here
+    ]; const pomme = fruits.includes("pomme");
+    if (pomme){
+        console.log("oui");}
+    else{
+            console.log("non, pas de pomme")
+        }
+    }
+    );
+    //Au clic sur le bouton, affiche dans la console si, oui ou non, il y a une pomme dans le tableau fruits.
 })();
